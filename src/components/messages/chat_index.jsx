@@ -7,25 +7,16 @@ class ChatIndex extends React.Component {
     }
 
     createChatBox() {
-        // let userId = '';
-        
-        // debugger
-        // let userInfo = window.localStorage.getItem([userId]).split(',');
-        // let firstName = userInfo[0];
-        // let lastName = userInfo[1];
-        // let body = userInfo[userInfo.length - 1];
-
-        
-        // let chatBody = document.createElement("p");
-        // chatBody.appendChild(body)
-        
 
     }
 
+
+    componentDidUpdate(prevProps, prevState) {
+        
+    }
+
     render() {
-        // if (!chatBody || !button) {
-        //     return null;
-        // } else {
+
         let userId = '';
         if (window.location.href.endsWith('?')) {
             userId = window.location.href.slice(window.location.href.length - 4, (window.location.href.length - 1));
@@ -45,13 +36,15 @@ class ChatIndex extends React.Component {
             let userInfo = window.localStorage.getItem([userId]).split(',');
             let firstName = userInfo[0];
             let lastName = userInfo[1];
-            let body = userInfo[userInfo.length - 1];
+            let body = userInfo[2];
+            let timeStamp = userInfo[userInfo.length - 1];
 
-            // let chatBody = document.createElement("p");
-            // let button = document.createElement("button");
-            // chatBody.innerText = body;
-            // button.innerText = firstName[0] + lastName[0];
+            
             debugger
+
+
+
+
             return (
                 <>
                 <div className="chat-box-wrapper">
@@ -59,7 +52,11 @@ class ChatIndex extends React.Component {
                         <p>{body}</p>
                     </div>
                 </div>
-                    <button>{`${firstName[0]}` + ` ${lastName[0]}`}</button>
+                <div className="chat-icon-wrapper">
+                    {/* G U for Guest User */}
+                    <button>GU</button>
+                    <p>{timeStamp}</p>
+                </div>
                 </>
             )
 

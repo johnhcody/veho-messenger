@@ -148,3 +148,26 @@ p {
     color: black;
     font-size: 15px;
 }
+
+.chat-icon-wrapper {
+    display: flex;
+}
+
+.chat-icon-wrapper button {
+    padding: 5px;
+    margin: 10px 0px 0px 25px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+}
+
+.chat-icon-wrapper p {
+    padding-top: 33px;
+    font-family: sans-serif;
+    color: black;
+    padding-left: 10px;
+    font-size: 12px;
+}
