@@ -12,12 +12,13 @@ class MessageDisplay extends React.Component {
                     <h2>Click a user on the left to start a conversation</h2>
                 </div>
             )
+        } else {
+            return (
+                <div className="message-display-container">
+                    <p>new message</p>
+                </div>
+            )
         }
-        return (
-            <div className="message-display-container">
-                
-            </div>
-        )
     }
 }
 

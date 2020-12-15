@@ -19,9 +19,7 @@ class MainPage extends React.Component {
                     <MessageDisplay />
                 </div>
             </div>
-
                 <MessageForm />
-
             </>
         )
     }

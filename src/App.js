@@ -8,6 +8,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={MainPage}></Route>
+          <Route exact path="/messages/:id" component={MainPage}></Route>
         </Switch>
       </BrowserRouter>
     </div>
