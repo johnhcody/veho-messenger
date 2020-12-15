@@ -1,0 +1,26 @@
+p {
+    color: red;
+}
+
+.main-component-container {
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+    background-color: aqua;
+}
+
+
+
+.message-index-wrapper {
+    width: 20%;
+    background-color: green;
+}
+
+.message-index-container {
+    min-height: 90%;
+}
+
+.display-wrapper {
+    width: 80%;
+    background-color: pink;
+}
