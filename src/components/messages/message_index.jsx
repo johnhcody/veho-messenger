@@ -7,18 +7,23 @@ class MessageIndex extends React.Component {
         let users = Data;
         debugger
         return (
-            <div className="message-index-container">
+            <div>
+                <div className="message-index-container">
 
-                {
-                    users.data.map(user => {
-                        return <MessageIndexItem
+                    {
+                        users.data.map(user => {
+                            return <MessageIndexItem
                             id={user.id}
                             firstName={user.firstName}
                             lastName={user.lastName}
-                        />
-                    })
-                }
+                            />
+                        })
+                    }
 
+                </div>
+                <div className="message-buttons-container">
+                    <button>New Conversation</button>
+                </div>
             </div>
         )
     }

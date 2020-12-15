@@ -7,6 +7,7 @@ class MessageIndexItem extends React.Component {
     }
 
     //handleClick needs to start a new conversation, and also load most recent convo.
+    // link to a new 
 
     render() {
         return (
