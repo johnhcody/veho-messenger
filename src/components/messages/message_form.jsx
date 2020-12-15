@@ -5,8 +5,8 @@ class MessageForm extends React.Component {
     render() {
         return (
             <div className="message-form-container">
-                <form action="" method="post">
-                    <textarea name="" id="">
+                <form>
+                    <textarea>
 
                     </textarea>
                     <button>Send</button>

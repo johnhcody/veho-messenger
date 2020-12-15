@@ -35,17 +35,18 @@ p {
 }
 
 .message-buttons-container button {
-    background-color: #331600;
+    background-color: #15428A;
     width: 90%;
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 11px;
     font-size: 21px;
     font-family: sans-serif;
     color: white;
+    
 }
 
 .message-buttons-container button:hover {
-    background-color:#FF7000;
+    background-color: #FF7000;
     color: black; 
 }
 
@@ -64,4 +65,19 @@ p {
     min-width: 100%;
     padding: 0px 0px 0px 0px;
     min-height: 65px;
+}
+.message-form-container button {
+    background-color:#15428A;
+    width: 90%;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    font-size: 21px;
+    font-family: sans-serif;
+    color: white;
+    
+    margin: 0px 0px 0px 11px;
+}
+.message-form-container button:hover {
+    background-color:#FF7000;
+    color: black; 
 }
