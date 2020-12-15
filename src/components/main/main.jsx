@@ -4,6 +4,7 @@ import '../../stylesheets/main.css';
 import MessageIndex from '../messages/message_index';
 import MessageButtons from '../messages/message_buttons';
 import MessageDisplay from '../messages/message_display';
+import MessageForm from '../messages/message_form';
 
 class MainPage extends React.Component {
 
@@ -19,7 +20,10 @@ class MainPage extends React.Component {
                     <MessageDisplay />
                 </div>
             </div>
-                    <MessageButtons />
+            <div className="bottom-wrapper">
+                <MessageButtons />
+                <MessageForm />
+            </div>
             </>
         )
     }

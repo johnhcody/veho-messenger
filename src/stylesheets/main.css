@@ -9,8 +9,6 @@ p {
     background-color: aqua;
 }
 
-
-
 .message-index-wrapper {
     width: 20%;
     background-color: green;
@@ -23,4 +21,47 @@ p {
 .display-wrapper {
     width: 80%;
     background-color: pink;
+}
+
+.bottom-wrapper {
+    display: flex;
+    padding-top: 10px;
+}
+
+.message-buttons-container {
+    display: flex;
+    min-width: 20%;
+    justify-content: center;
+}
+
+.message-buttons-container button {
+    background-color: #331600;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 11px;
+    font-size: 21px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.message-buttons-container button:hover {
+    background-color:#FF7000;
+    color: black; 
+}
+
+.message-form-container {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 80%;
+}
+
+.message-form-container form {
+    min-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.message-form-container textarea {
+    min-width: 100%;
+    padding: 0px 0px 0px 0px;
+    min-height: 65px;
 }
