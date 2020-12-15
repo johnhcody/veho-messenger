@@ -56,6 +56,16 @@ class MessageForm extends React.Component {
     }
 
     handleSubmit() {
+
+
+        const RESPONSES = [
+            "Today sure is a great day",
+            "It's great to hear from you",
+            "It is amazing what the internet can do",
+            "I remember when you couldn't talk on the phone and use the internet at the same time",
+            "How about that weather?"
+        ]
+
         let users = Data;
         let userId = '';
         let firstName = '';
@@ -83,7 +93,11 @@ class MessageForm extends React.Component {
             lastName = this.props.lastName;
         }
         let timeStamp = this.findTimeStamp();
+        let randomIdx = Math.floor(Math.random() * RESPONSES.length);
+        let response = RESPONSES[randomIdx];
+        window.localStorage.setItem('response', `${response}`);
         return window.localStorage.setItem(`${userId}`, [firstName, lastName, this.state.body, timeStamp]);
+
     }
 
     handleChange(field) {

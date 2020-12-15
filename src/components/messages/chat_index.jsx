@@ -4,6 +4,9 @@ class ChatIndex extends React.Component {
     constructor(props) {
         super(props);
         this.createChatBox = this.createChatBox.bind(this);
+        this.state = {
+            ready: false
+        }
     }
 
     createChatBox() {
@@ -11,9 +14,10 @@ class ChatIndex extends React.Component {
     }
 
 
-    componentDidUpdate(prevProps, prevState) {
-        
-    }
+    // componentDidMount() {
+
+    //     this.setTimeOut(() => this.setState({ ready: true }), Math.floor(Math.random() * 50000))
+    // }
 
     render() {
 
@@ -28,21 +32,13 @@ class ChatIndex extends React.Component {
             return (
                 null
             ) 
-        } else {
-
-            debugger
-
+        } else if (!this.state.ready) {
 
             let userInfo = window.localStorage.getItem([userId]).split(',');
             let firstName = userInfo[0];
             let lastName = userInfo[1];
             let body = userInfo[2];
             let timeStamp = userInfo[userInfo.length - 1];
-
-            
-            debugger
-
-
 
 
             return (
