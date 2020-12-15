@@ -171,3 +171,50 @@ p {
     padding-left: 10px;
     font-size: 12px;
 }
+
+.chat-box-response {
+    background-color: lightgray;
+    width: 250px;
+    min-height: 80px;
+    padding: 10px;
+    margin: 25px 0px 0px 25px;
+    position: fixed;
+    right: 25px;
+}
+
+.response-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat-box-response p {
+    font-family: sans-serif;
+    color: black;
+    font-size: 15px;
+}
+
+.chat-icon-wrapper-response {
+    display: flex;
+}
+
+.chat-icon-wrapper-response button {
+    padding: 5px;
+    margin: 154px 0px 0px 25px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+}
+
+.chat-icon-wrapper-response p {
+    padding-top: 32px;
+    margin: 147px 28px 0px 14px;
+    font-family: sans-serif;
+    color: black;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+
