@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ChatIndex from './chat_index';
 
 class MessageDisplay extends React.Component {
 
@@ -15,7 +15,7 @@ class MessageDisplay extends React.Component {
         } else {
             return (
                 <div className="message-display-container">
-                    <p>new message</p>
+                    <ChatIndex />
                 </div>
             )
         }

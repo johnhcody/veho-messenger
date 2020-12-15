@@ -16,9 +16,10 @@ class MessageIndexItem extends React.Component {
     // link to a new 
 
     handleClick() {
-        debugger
+        
         //this.setState({userId: this.props.id})
-        this.setState({ready: true})
+        this.setState({ready: true});
+
         //return <Link to={`messages/${this.props.id}`}/>
     }
 
@@ -27,7 +28,14 @@ class MessageIndexItem extends React.Component {
         if (ready) {
             return (
                 <>
-                <Redirect to={`/messages/${this.props.id}`} />
+                <Redirect to={{
+                    pathname: `/messages/${this.props.id}`,
+                    state: {
+                        indexItem: true,
+                        userId: this.props.id,
+                        firstName: this.props.firstName,
+                        lastName: this.props.lastName
+                    }}} />
                 <div className="index-item-wrapper" onClick={() => this.handleClick()}>
                         <i className="far fa-user"></i>
                         <p>{this.props.firstName}</p>

@@ -5,14 +5,14 @@ import MessageIndexItem from './message_index_item';
 class MessageIndex extends React.Component {
     render() {
         let users = Data;
-        debugger
         return (
             <div>
                 <div className="message-index-container">
 
                     {
-                        users.data.map(user => {
+                        users.data.map((user, idx) => {
                             return <MessageIndexItem
+                            key={idx}    
                             id={user.id}
                             firstName={user.firstName}
                             lastName={user.lastName}
