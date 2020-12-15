@@ -1,5 +1,6 @@
 import React from 'react';
 import Data from './user_data';
+import MessageIndexItem from './message_index_item';
 
 class MessageIndex extends React.Component {
     render() {
@@ -7,7 +8,17 @@ class MessageIndex extends React.Component {
         debugger
         return (
             <div className="message-index-container">
-                <p>Get Wrapped</p>
+
+                {
+                    users.data.map(user => {
+                        return <MessageIndexItem
+                            id={user.id}
+                            firstName={user.firstName}
+                            lastName={user.lastName}
+                        />
+                    })
+                }
+
             </div>
         )
     }

@@ -6,12 +6,10 @@ p {
     display: flex;
     width: 100%;
     min-height: 600px;
-    background-color: aqua;
 }
 
 .message-index-wrapper {
     width: 20%;
-    background-color: green;
 }
 
 .message-index-container {
@@ -80,4 +78,35 @@ p {
 .message-form-container button:hover {
     background-color:#FF7000;
     color: black; 
+}
+
+.index-item-wrapper {
+    display: flex;
+    width: 100%;
+    height: 58px;
+    border-bottom: 2px solid black;
+}
+
+.index-item-wrapper:hover {
+    background-color: #15428A;
+}
+
+.index-item-wrapper:hover i {
+    color: white;
+}
+.index-item-wrapper:hover p {
+    color: white;
+}
+
+.index-item-wrapper p {
+    padding: 10px 3px 0px 6px;
+    font-family: sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.index-item-wrapper i {
+    padding: 10px 0px 0px 7px;
+    font-size: 20px;
+    color: black;
 }
