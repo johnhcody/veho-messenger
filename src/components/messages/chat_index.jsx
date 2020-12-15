@@ -3,15 +3,11 @@ import React from 'react';
 class ChatIndex extends React.Component {
     constructor(props) {
         super(props);
-        this.createChatBox = this.createChatBox.bind(this);
         this.state = {
             ready: false
         }
     }
 
-    createChatBox() {
-
-    }
 
 
     componentDidMount() {
