@@ -1,7 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
 CSS Reset File Courtesy of http://meyerweb.com/eric/tools/css/reset/
 
 Features yet to be complete for a full MVP
@@ -9,4 +7,3 @@ Features yet to be complete for a full MVP
  - Currently the New Conversation Button does not have the desired effect (it is a dead button)
  - When creating a new message, the old message is deleted
  - styling within the textarea of the form
- 
